@@ -15,11 +15,13 @@
 ### インストール
 [pickadate.js](http://amsul.ca/pickadate.js/)
 
-インストールをすると以下のファイルがインストトールされ以下のjsファイルと、cssファイルを読み込ませます。
+インストールを実行すると以下のファイル群がインストールされ、その中から以下のjsファイルと、cssファイルを読み込ませます。
 ![スクリーンショット-2018-01-12-8.03.09.jpg](https://qiita-image-store.s3.amazonaws.com/0/147291/7a51a16e-96ea-cbb9-e89e-88f03d1adf0e.jpeg)
 
 
 ## pickadate.jsデモ
+### デフォルトdatepickerデモ
+![ezgif-4-cd54cb2f48.gif](https://qiita-image-store.s3.amazonaws.com/0/147291/9198111b-0c6f-8b75-a4d0-9a4be9b7af46.gif)
 
 ``` HTML:index.html
 <!DOCTYPE html>
@@ -32,7 +34,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/default.css">
 <link rel="stylesheet" href="assets/css/default.date.css">
-<!-- ラクシック版 -->
+<!-- クラクシック版 -->
 <!-- <link rel="stylesheet" href="assets/css/classic.css">
 <link rel="stylesheet" href="assets/css/classic.date.css"> -->
  
@@ -64,8 +66,8 @@ $(function() {
     $('#demo').pickadate();
 });
 ```
-### デフォルトdatepickerデモ
-![ezgif-4-cd54cb2f48.gif](https://qiita-image-store.s3.amazonaws.com/0/147291/9198111b-0c6f-8b75-a4d0-9a4be9b7af46.gif)
+### 日本語対応datepicker
+![ezgif-4-14c1ef3061.gif](https://qiita-image-store.s3.amazonaws.com/0/147291/ca2513ef-2897-05eb-42a1-f19ad0121770.gif)
 
 日本語化したい方は以下のjsファイルを読み込ませれば、日本語のdatepickerが出力できます。フォーマット等もかなり自分ようにカスタマイズすることができます。
 
@@ -81,12 +83,16 @@ jQuery.extend( jQuery.fn.pickadate.defaults, {
 });
 ```
 
-### 日本語対応datepicker
-![ezgif-4-14c1ef3061.gif](https://qiita-image-store.s3.amazonaws.com/0/147291/ca2513ef-2897-05eb-42a1-f19ad0121770.gif)
+ライブラリの詳しい使い方については、オフィシャルのHPにも記載されているので、参考にしてみください。
 
 
-### デモページ & Github
+## デモページ & Github
 ### デモペーシ
 [http://tech-portfolio.org/demo/pickadate](http://tech-portfolio.org/demo/pickadate)
-
 ### Github（ソース）
+[https://github.com/FujiyamaYuta/pickadate_demo](https://github.com/FujiyamaYuta/pickadate_demo)
+
+
+#### 参考
+[JQueryプラグインまとめ](https://webkaru.net/jquery-plugin/pickadate-js/)
+[【pickadate.js】シンプルだけど高機能な日付カレンダー編](https://dev.classmethod.jp/ria/html5/pickadate-jsdate-picker/)
